@@ -18,7 +18,6 @@
             flex-direction: column; 
             align-items: center; 
             justify-content: center;
-            /* dvh (dynamic view height) règle le problème du saut de hauteur sur Safari */
             min-height: 100dvh; 
             overflow: hidden; 
             touch-action: none;
@@ -53,13 +52,12 @@
         }
 
         #u-easter-egg {
-            position: fixed; 
-            /* On remonte le 'u' en fonction de la barre de navigation iOS */
+            position: fixed;
             bottom: calc(env(safe-area-inset-bottom) + 15px); 
             right: 15px;
             font-size: 0.6rem; 
             color: #575151; 
-            opacity: 0.8;
+            opacity: 0.1;
             user-select: none; 
             pointer-events: none; 
             z-index: 1;
